@@ -58,7 +58,7 @@
 
 			if(M.barrageBox.children().length > settings.row){
 				var index=0;
-				if(M.vertical  == 'bottom'){
+				if(M.vertical  == 'top'){
 					index=M.barrageBox.children().length -1;
 				}
 				M.barrageBox.children().eq(index).animate({
