@@ -57,8 +57,11 @@
 			Obj.data.push(str);
 
 			if(M.barrageBox.children().length > settings.row){
-
-				M.barrageBox.children().eq(0).animate({
+				var index=0;
+				if(M.vertical  == 'bottom'){
+					index=M.barrageBox.children().length -1;
+				}
+				M.barrageBox.children().eq(index).animate({
 					'opacity' : 0,
 				},300,function(){
 					$(this).css({
